@@ -1,0 +1,72 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+$dict-tool-h: 40px;
+
+.title {
+  color: $color-font-main-title;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.dictClassify {
+  height: calc(#{$content-height} - #{$dict-tool-h});
+
+  .tableRowSelect {
+    background: lighten($color-base,30%);
+  }
+  .tableRow {
+    cursor: pointer;
+
+    & > td {
+      padding: 10px !important;
+    }
+  }
+}
+
+.dictClassifyTool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $dict-tool-h;
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button {
+    margin-right: 16px;
+    color: $color-base;
+    cursor: pointer;
+
+    &Delete {
+      color: $color-warn;
+    }
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+.dict {
+  table {
+    table-layout: fixed;
+
+    & td {
+      padding: 10px !important;
+    }
+  }
+
+  .dictDetailTool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $dict-tool-h;
+  }
+
+  .remark {
+    @include ellipsis();
+  }
+}

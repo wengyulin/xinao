@@ -1,0 +1,6 @@
+@import "./styles/mixin";
+
+.spin {
+  @include center();
+  position: absolute;
+}

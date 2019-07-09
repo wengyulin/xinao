@@ -1,0 +1,17 @@
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login {
+  @include center();
+  width: 300px;
+
+  &Title {
+    color: $color-font-content;
+    text-align: center;
+  }
+}

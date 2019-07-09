@@ -1,0 +1,23 @@
+@mixin center($direction: all) {
+  position: absolute;
+
+  @if $direction == y {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $direction == x {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin ellipsis($width: 100%) {
+  display: inline-block;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

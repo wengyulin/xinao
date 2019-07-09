@@ -1,0 +1,7 @@
+@import "./variable";
+
+.ant-layout-header {
+  background: $color-white !important;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, .2);
+  z-index: 1;
+}

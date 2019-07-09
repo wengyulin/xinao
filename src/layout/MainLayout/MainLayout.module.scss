@@ -1,0 +1,40 @@
+@import "../../styles/variable";
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-white;
+
+  .logo a {
+    display: flex;
+    align-items: center;
+
+    line-height: 1;
+    color: $color-font-main-title !important;
+    font-size: 26px;
+  }
+
+  .logo img {
+    margin-right: 10px;
+  }
+}
+
+.dropDown {
+  margin-left: 10px;
+}
+
+.contentContainer {
+  padding: 10px 10px;
+}
+
+.content {
+  width: 100%;
+  min-height: $content-height;
+  background: $color-white;
+}
