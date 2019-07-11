@@ -77,6 +77,35 @@ const Roles = () => {
       ),
     },
   ];
+
+  // const handleClick = (type: classifyClickType) => {
+  //   switch (type) {
+  //     case 'add':
+  //       dispatch({
+  //         type: DictAction.SET_CLASSIFY_MODAL,
+  //         payload: {isEdit: false, visible: true},
+  //       });
+  //       dispatch({
+  //         type: DictAction.SET_CLASSIFY_FORM,
+  //         payload: {},
+  //       });
+  //       break;
+  //     case 'edit':
+  //       dispatch({
+  //         type: DictAction.SET_CLASSIFY_MODAL,
+  //         payload: {isEdit: true, visible: true},
+  //       });
+  //       dispatch({
+  //         type: DictAction.SET_CLASSIFY_FORM,
+  //         payload: state.classifySelected,
+  //       });
+  //       break;
+  //     case 'delete':
+  //       deleteClassify();
+  //       break;
+  //   }
+  // };
+
   return (
     <>
       <div>
